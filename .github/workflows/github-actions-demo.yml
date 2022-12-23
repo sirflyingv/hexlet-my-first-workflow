@@ -1,0 +1,9 @@
+name: Github actions test
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+  trying-to-say-hello:
+  runs-on: ubuntu-latest
+  steps:
+    -run: echo "just run echo from yml"
+    -run: make say-hello
